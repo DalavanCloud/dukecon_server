@@ -16,8 +16,8 @@
     <packaging>pom</packaging>
 
     <scm>
-        <url>https://github.com/dukecon/dukecon_server</url>
-        <connection>scm:git:https://github.com/dukecon/dukecon_server.git</connection>
+        <url>https://github.com/ascheman/dukecon_server</url>
+        <connection>scm:git:ssh://git@github.com/ascheman/dukecon_server.git</connection>
         <tag>HEAD</tag>
     </scm>
     <name>DukeCon Server</name>
@@ -68,6 +68,11 @@
             <name>DukeCon</name>
             <url>file://${java.io.tmpdir}/repos/releases</url>
         </repository>
+        <snapshotRepository>
+            <id>dukecon</id>
+            <name>DukeCon</name>
+            <url>file://${java.io.tmpdir}/repos/snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
 
 
