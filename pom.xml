@@ -65,16 +65,19 @@
     <distributionManagement>
         <repository>
             <id>dukecon</id>
-            <name>DukeCon</name>
-            <url>file://${java.io.tmpdir}/repos/releases</url>
+            <name>DukeCon Releases</name>
+            <url>
+                http://${nexus.repository.host}${nexus.repository.port}${nexus.repository.base}/content/repositories/releases
+            </url>
         </repository>
         <snapshotRepository>
             <id>dukecon</id>
-            <name>DukeCon</name>
-            <url>file://${java.io.tmpdir}/repos/snapshots</url>
+            <name>DukeCon Snapshots</name>
+            <url>
+                http://${nexus.repository.host}${nexus.repository.port}${nexus.repository.base}/content/repositories/snapshots
+            </url>
         </snapshotRepository>
     </distributionManagement>
-
 
     <dependencies>
         <dependency>
