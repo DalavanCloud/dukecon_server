@@ -94,7 +94,7 @@
                 <plugin>
                     <groupId>com.github.danielflower.mavenplugins</groupId>
                     <artifactId>multi-module-maven-release-plugin</artifactId>
-                    <version>1.4.2</version>
+                    <version>DC-1.4-SNAPSHOT</version>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -102,6 +102,11 @@
             <plugin>
                 <groupId>com.github.danielflower.mavenplugins</groupId>
                 <artifactId>multi-module-maven-release-plugin</artifactId>
+                <configuration>
+                    <resolveSnapshots>
+                        <resolveSnapshot>org.dukecon:dukecon-html5-client:1.2-SNAPSHOT</resolveSnapshot>
+                    </resolveSnapshots>
+                </configuration>
             </plugin>
         </plugins>
     </build>
